@@ -1,0 +1,546 @@
+nav{
+    background-color: #514134;
+    height: 85px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o contêiner em duas colunas */
+    width: 100%;
+    position: relative
+    
+}
+
+#navbar {
+
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+  
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+     z-index: 100; /* Garante que a navbar fique acima de outros elementos */
+}
+
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+nav h1 {
+
+    margin-top: 25px;
+    margin-left: 25px;    
+  }
+
+.main h1{
+    color: #514134;
+    font-size: 80px;
+}
+
+
+.text-nav{
+    position: absolute; /* Posiciona o texto dentro do elemento pai */
+    bottom: 0; /* Alinha na parte inferior */
+    right: 0; /* Alinha à direita */
+    text-align: right; /* Alinha o texto à direita */
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #ffffff; /* Define a cor do texto */
+    padding: 6px;
+  }
+
+nav a:hover{
+    background-color: #735D4B;
+    padding: 6px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.img-books{
+    width: 762px;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+
+.convert-books{
+    width: 380px;
+    height: 193px;
+}
+
+
+.book-cover{
+    width: 240px;
+    height: 385px;    
+}
+
+.end-image{
+    height: auto;
+    width: 100%;
+
+}
+
+.imagem-final{
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Garante que a imagem não vaze do contêiner */
+}
+
+
+
+
+
+.botao-con{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 30vh; /* Garante que o container ocupa toda a tela */
+  
+}
+
+
+.estilo-botao-contribuir{
+
+    width: 459px;
+    height: 89px;
+    background-color: #514134;
+    color: white; /* Cor do texto (opcional) */
+    border: none; /* Remove a borda padrão (opcional) */
+    cursor: pointer; /* Indica que é clicável (opcional) */
+    font-size: 26px; /* Tamanho da fonte (opcional) */
+    /* Outros estilos que você queira adicionar */
+    margin-top: 190px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+ 
+}
+
+
+.estilo-botao-contribuir:hover{
+    background-color: #746050;
+
+}
+
+.estilo-botao-contato{
+    width: 459px;
+    height: 89px;
+    background-color: #42C051;
+    color: white; /* Cor do texto (opcional) */
+    border: none; /* Remove a borda padrão (opcional) */
+    cursor: pointer; /* Indica que é clicável (opcional) */
+    font-size: 26px; /* Tamanho da fonte (opcional) */
+    /* Outros estilos que você queira adicionar */
+    border-radius: 5px;
+    margin-bottom: 190px;
+
+}
+
+.estilo-botao-contato:hover{
+    background-color: #319c3d;
+
+}
+
+
+
+.container{
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Alinha os itens horizontalmente (lado a lado) */
+    justify-content: flex-start; /* Alinha os itens ao início do container (opcional) */
+    align-items: center; /* Alinha os itens verticalmente ao centro do container (opcional) */
+    gap: 20px; /* Espaçamento entre as imagens (opcional) */    
+}
+
+
+.botao-compra{
+    width: 135px;
+    height: 30px;
+    background-color: #E30202;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    outline-width: 0;
+}
+
+.botao-compra:hover{
+    background-color: #ff3030;
+    cursor:pointer;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 28pt;
+
+}
+
+.contribuintes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.contribuintes a{
+    background-color: #524236 ;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.contribuintes a:hover{
+    background-color: #735D4B ;
+}
+
+
+
+
+#publicacoes h3{
+    
+    margin-top: 90px;
+}
+
+.servicos{
+    
+    
+    background-color: #F5F5F4;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+}
+
+.servicos-itens{
+    align-items: center;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Alinha os itens ao centro */
+    flex-wrap: wrap;
+
+}
+
+.text-servico {
+    margin-right: 135px;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center; /* Ou space-between ou space-evenly */
+ 
+    margin-top: 40px;
+    margin-left: 50px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #514134;
+    color: white;
+  }
+
+
+  #catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .livro {
+    width: 200px;
+    margin: 10px;
+    
+  }
+  
+  .livro img {
+    width: 100%;
+  }
+
+
+h2 {
+    margin-left: 60px;
+}
+
+
+.desc{ 
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.preco-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 200px; /* Altura do container */
+  }
+  
+  .preco {
+    font-size: 4em; /* Tamanho grande */
+    font-weight: bold;
+    color: #333; /* Cor do preço */
+    animation: pulse 1.5s infinite; /* Animação */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .navbar {
+   
+    padding: 10px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none; /* Esconde o botão em telas maiores */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .seta-baixo {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #6e6e6e; /* Cor da seta */
+    animation: seta-animada 1s infinite;
+    position: relative; /* Ou position: absolute; */
+
+    margin-bottom: 30px;
+    margin-left: 50%;
+  }
+
+
+  @keyframes seta-animada {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px); /* Ajuste a distância da animação */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Esconde o menu em telas menores */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Ajuste conforme a altura da sua navbar */
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background-color: #524236;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  
+    nav a:hover{
+      background-color: #735D4B;
+      padding: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+    }
+
+    nav h1{
+      margin-top: 0px;
+    }
+
+    .menu li {
+      margin: 10px 0;
+      text-align: center;
+      
+    }
+  
+    .menu-toggle {
+      display: block; /* Exibe o botão em telas menores */
+      margin-left: 110%;
+    }
+  
+    /* Estilos para o menu aberto */
+    .menu.active {
+      display: flex;
+    }
+    .img-books{
+        width: 362px;
+
+    }
+    .main{
+      flex-wrap: wrap;
+      align-items: center; /* Opcional */
+    }
+  
+    .text-servico{
+      margin-left: 30%;
+    }
+  }
+
+
+
+
+
+.nameLink{
+  
+  color: black;
+}
+
+
+.bioContent{
+  margin: 60px 30% 70px 30% ;
+  display: flex;
+}
+
+h4{
+  font-size: 30px;
+}
+
+
+.container{
+  width: 700px;
+  padding: 30px;
+}
+
+.container img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.text-bio{
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.contri{
+  margin-bottom: 90px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ld{
+  align-items: center;
+  font-size: 30px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.categorias {
+margin-top: 10px;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+.total{
+  display: flex;
+}
+
+.categoria {
+background-color: #817036;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+  
+}
+
+.categoria:hover {
+background-color: #42391b;
+}
+
+.produtos {
+
+justify-content: center;
+}
+
+.produto {
+background-color: #f7f7f7;
+padding: 20px;
+margin: 10px;
+
+text-align: left;
+  display: flex;
+}
+
+.produto img {
+width: 250px;
+height: auto;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.produto h2 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.produto p {
+font-size: 14px;
+margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+
+@media (max-width: 1030px) {
+  .produto{
+      display:block;
+  }
+}
